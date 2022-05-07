@@ -20,7 +20,7 @@
 
 :root {
   --vp-sidebar-width-mobile: 320px;
-  --vp-sidebar-width-small: 272px;
+  --vp-sidebar-width-small: 240px;
 }
 
 html.dark {

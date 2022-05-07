@@ -25,16 +25,16 @@ module.exports = (async () => {
     themeConfig: {
       logo: '/img/logo-vue.svg',
 
-      algolia: {
-        indexName: 'vuejs-v3',
-        appId: 'BH4D9OD16A',
-        apiKey: 'bc6e8acb44ed4179c30d0a45d6140d3f'
-      },
+      // algolia: {
+      //   indexName: 'vuejs-v3',
+      //   appId: 'BH4D9OD16A',
+      //   apiKey: 'bc6e8acb44ed4179c30d0a45d6140d3f'
+      // },
 
-      carbonAds: {
-        code: 'CEBDT27Y',
-        placement: 'vuejsorg'
-      },
+      // carbonAds: {
+      //   code: 'CEBDT27Y',
+      //   placement: 'vuejsorg'
+      // },
 
       socialLinks: [
         { icon: 'github', link: 'https://github.com/vuejs/vue' },
@@ -49,6 +49,7 @@ module.exports = (async () => {
           items: [
             {
               items: [
+                { text: 'Components', link: '/components/button' },
                 { text: 'Guide', link: '/guide/introduction' },
                 { text: 'Installtion', link: '/guide/installation' }
               ]
@@ -123,6 +124,16 @@ module.exports = (async () => {
       ],
 
       sidebar: {
+        '/components/': [
+          {
+            text: 'Basic',
+            items: [
+              { text: 'Button', link: '/components/button' },
+              { text: 'Table', link: '/components/table' },
+              { text: 'Form', link: '/components/form' },
+            ],
+          },
+        ],
         '/guide/': [
           {
             text: 'Essentials',

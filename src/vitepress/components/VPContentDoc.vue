@@ -116,19 +116,19 @@ const pageClass = computed(() => {
 
 @media (min-width: 768px) {
   .VPContentDoc {
-    padding: 48px 32px 96px;
+    padding: 48px 22px 96px;
   }
 }
 
 @media (min-width: 960px) {
   .VPContentDoc {
-    padding: 64px 64px 96px;
+    padding: 64px 44px 96px;
   }
 }
 
 @media (min-width: 1280px) {
   .VPContentDoc {
-    padding: 64px 0 96px 64px;
+    padding: 64px 0 96px 44px;
   }
   .VPContentDoc:not(.has-sidebar.has-aside) {
     padding-left: calc((100vw - 688px) / 2);
@@ -140,12 +140,12 @@ const pageClass = computed(() => {
     display: flex;
   }
   .content {
-    min-width: 620px;
+    min-width: 760px;
     margin: 0;
     order: 1;
   }
   .VPContentDoc:not(.has-aside) .content {
-    min-width: 688px;
+    min-width: 788px;
   }
   .aside {
     display: block;
@@ -155,10 +155,10 @@ const pageClass = computed(() => {
 
 @media (min-width: 1440px) {
   .VPContentDoc {
-    padding: 64px 0 96px 96px;
+    padding: 64px 0 96px 66px;
   }
   .aside {
-    padding-left: 96px;
+    padding-left: 66px;
   }
 }
 </style>

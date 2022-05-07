@@ -28,7 +28,7 @@
 
 .vt-doc div[class*='language-'] {
   position: relative;
-  margin: 28px -24px;
+  /* margin: 28px -24px; */
   background-color: #292d3e;
   overflow-x: auto;
   transition: background-color 0.5s;
@@ -40,7 +40,6 @@
 
 @media (min-width: 640px) {
   .vt-doc div[class*='language-'] {
-    margin: 28px 0;
     border-radius: 8px;
   }
 }

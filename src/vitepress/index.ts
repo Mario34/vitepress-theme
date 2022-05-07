@@ -4,9 +4,14 @@ import VPNotFound from './components/VPNotFound.vue'
 import { Theme } from 'vitepress'
 import { withConfigProvider } from './composables/config'
 
+import VPDemo from './components/VPDemo.vue'
+
 const VPTheme: Theme = {
   Layout: withConfigProvider(VPApp),
-  NotFound: VPNotFound
+  NotFound: VPNotFound,
+  enhanceApp({app}) {
+    app.component('Demo', VPDemo)
+  },
 }
 
 export { VPTheme }

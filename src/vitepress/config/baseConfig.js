@@ -7,6 +7,9 @@
 
 // for local-linked development
 const deps = ['@vue/theme', '@vueuse/core', 'body-scroll-lock']
+const { MarkdownTransform, mdPlugin } = require('./markdown')
+const { highlight } = require('./highlight')
+
 
 /**
  * @type {() => Promise<import('vitepress').UserConfig>}
@@ -18,7 +21,10 @@ module.exports = async () => ({
     },
     optimizeDeps: {
       exclude: deps
-    }
+    },
+    plugins: [
+      MarkdownTransform('../examples'),
+    ],
   },
 
   head: [
@@ -57,7 +63,8 @@ module.exports = async () => ({
   ],
 
   markdown: {
-    highlight: await require('./highlight')()
+    highlight,
+    config: mdPlugin,
   },
 
   shouldPreload: (link) => {
