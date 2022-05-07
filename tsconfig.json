@@ -8,6 +8,7 @@
     "noUnusedLocals": true,
     "lib": ["ESNext", "DOM"],
     "types": ["vite/client"],
+    "jsx": "preserve",
     "paths": {
       "@vue/theme": ["src/index.ts"]
     }
